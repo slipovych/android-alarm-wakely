@@ -57,3 +57,11 @@ Example CLI build (macOS):
 ```bash
 env JAVA_HOME=/path/to/your/jdk-11 \
     ./gradlew :app:assembleDebug
+```
+
+## ⚠️ Known Limitations & Technical Debt
+* **String-based Time:** `Event.time` is stored as a string; next occurrence is inferred rather than strictly modeled.
+* **Main Thread DB:** Room is configured with `allowMainThreadQueries()` (acceptable for a school prototype, bad for production).
+* **Legacy Services:** Alarm scheduling uses a foreground `IntentService` instead of modern `WorkManager` or `ForegroundService` patterns.
+* **No Reboot Rescheduling:** A `BOOT_COMPLETED` receiver is not implemented; alarms will not survive a device restart.
+* **No Edit Flow:** Existing events cannot be edited (only created or deleted).
