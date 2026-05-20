@@ -1,0 +1,11 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        // Needed for several GitHub-published Android libraries used by the app.
+        maven { url 'https://jitpack.io' }
+    }
+}
+rootProject.name = "Wakely"
+include ':app'

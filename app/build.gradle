@@ -1,0 +1,90 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.wakely.wakely"
+        minSdk 28
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    namespace 'com.wakely.wakely'
+}
+
+configurations.configureEach {
+    // Ensure a sqlite-jdbc version with macOS arm64 native is used during annotation processing.
+    resolutionStrategy.force "org.xerial:sqlite-jdbc:3.36.0.3"
+}
+
+dependencies {
+
+    implementation 'com.google.android.material:material:1.5.0-alpha04'
+    implementation 'androidx.databinding:databinding-compiler-common:4.1.3'
+
+    def room_version = "2.3.0"
+
+    implementation "androidx.room:room-runtime:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+    implementation "androidx.room:room-rxjava2:$room_version"
+    implementation "androidx.room:room-rxjava3:$room_version"
+
+    // Fix Room compiler crash on Apple Silicon:
+    // Caused by: java.lang.Exception: No native library is found for os.name=Mac and os.arch=aarch64
+    // Room 2.3.0 depends on an old sqlite-jdbc without macOS arm64 natives; force a newer one.
+    // Keep it on the annotation processor classpath; it should not end up in the APK.
+    annotationProcessor "org.xerial:sqlite-jdbc:3.36.0.3"
+
+
+    def lifecycle_version = "2.4.0"
+    // ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    // LiveData
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+    // Lifecycles only (without ViewModel or LiveData)
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
+
+    // Saved state module for ViewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version"
+
+    // Annotation processor
+    //noinspection LifecycleAnnotationProcessorWithJava8
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+
+
+    implementation 'androidx.appcompat:appcompat:1.3.1'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+
+
+    // QR-scanner
+    // The old coordinates (com.budiyev.android:code-scanner:2.1.0) are not on MavenCentral/Google.
+    // Official installation uses JitPack with com.github.yuriy-budiyev group.
+    implementation 'com.github.yuriy-budiyev:code-scanner:2.3.2'
+
+    // QR-generator
+    // Published via JitPack (see androidmads/QRGenerator).
+    implementation 'com.github.androidmads:QRGenerator:1.0.5'
+    implementation 'com.google.zxing:core:3.3.3'
+
+}

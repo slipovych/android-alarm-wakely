@@ -1,0 +1,35 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Roman/AndroidStudioProjects/Wakely/app/src/main/res/drawable/button.xml" value="0.20092592592592592" />
+        <entry key="..\:/Users/Roman/AndroidStudioProjects/Wakely/app/src/main/res/drawable/button_add.xml" value="0.19814814814814816" />
+        <entry key="..\:/Users/Roman/AndroidStudioProjects/Wakely/app/src/main/res/drawable/button_ripple_effect.xml" value="0.12864583333333332" />
+        <entry key="..\:/Users/Roman/AndroidStudioProjects/Wakely/app/src/main/res/drawable/ic_baseline_done_24.xml" value="0.19444444444444445" />
+        <entry key="..\:/Users/Roman/AndroidStudioProjects/Wakely/app/src/main/res/drawable/right_arrow_foreground.xml" value="0.20092592592592592" />
+        <entry key="..\:/Users/Roman/AndroidStudioProjects/Wakely/app/src/main/res/layout/activity_alarm.xml" value="0.19375" />
+        <entry key="..\:/Users/Roman/AndroidStudioProjects/Wakely/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Roman/AndroidStudioProjects/Wakely/app/src/main/res/layout/activity_qr.xml" value="0.1921875" />
+        <entry key="..\:/Users/Roman/AndroidStudioProjects/Wakely/app/src/main/res/layout/activity_set_qr.xml" value="0.22" />
+        <entry key="..\:/Users/Roman/AndroidStudioProjects/Wakely/app/src/main/res/layout/add_alarm_activity.xml" value="0.20462962962962963" />
+        <entry key="..\:/Users/Roman/AndroidStudioProjects/Wakely/app/src/main/res/layout/event_item.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/Roman/AndroidStudioProjects/Wakely/app/src/main/res/layout/fragment_mission.xml" value="0.19270833333333334" />
+        <entry key="..\:/Users/Roman/AndroidStudioProjects/Wakely/app/src/main/res/layout/fragment_mission_button.xml" value="0.19322916666666667" />
+        <entry key="..\:/Users/Roman/AndroidStudioProjects/Wakely/app/src/main/res/layout/fragment_qr_scanner.xml" value="0.1" />
+        <entry key="..\:/Users/Roman/AndroidStudioProjects/Wakely/app/src/main/res/layout/fragment_set_qr.xml" value="0.19322916666666667" />
+        <entry key="..\:/Users/Roman/AndroidStudioProjects/Wakely/app/src/main/res/layout/item_qr.xml" value="0.1921875" />
+        <entry key="..\:/Users/Roman/AndroidStudioProjects/Wakely/app/src/main/res/mipmap-anydpi-v26/right_arrow.xml" value="0.20092592592592592" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screens.main.MainActivity"
+    android:background="@color/grey">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/opensans_regular"
+            android:text="@string/add_alarm"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <ImageButton
+            android:id="@+id/set_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/grey"
+            android:src="@drawable/ic_baseline_done_24"
+            android:textColor="@color/purple_200"
+            android:textSize="35sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/selected_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+
+        android:fontFamily="@font/opensans_semibold"
+        android:textColor="@color/white"
+        android:textSize="70dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/select_time_button"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/add_alarm_button"
+        android:backgroundTint="@color/purple_200"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:fontFamily="@font/opensans_semibold"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/qr_logo" />
+
+        <RelativeLayout
+            android:id="@+id/mission_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/mission_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/mission"
+                android:textColor="@color/white"
+                android:fontFamily="@font/opensans_semibold"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:id="@+id/set_mission_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mission_textview"
+                android:text="@string/set_mision"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button"
+                android:textColor="@color/purple_200"
+                android:textSize="40dp"
+                android:fontFamily="@font/opensans_semibold"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+

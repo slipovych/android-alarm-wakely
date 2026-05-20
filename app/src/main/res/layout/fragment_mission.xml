@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".screens.main.MainActivity"
+    android:background="@color/grey">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/opensans_regular"
+            android:text="@string/add_alarm"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/set_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="@color/grey"
+            android:text="@string/checkmark"
+            android:textColor="@color/purple_200"
+            android:textSize="35sp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/selected_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+
+        android:fontFamily="@font/opensans_semibold"
+        android:textColor="@color/white"
+        android:textSize="50dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/select_time_button"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/add_alarm_button"
+        android:backgroundTint="@color/purple_200"
+        android:textColor="@color/white"
+        android:fontFamily="@font/opensans_semibold"/>
+
+
+
+
+    <com.google.android.material.switchmaterial.SwitchMaterial
+        android:id="@+id/mission_switch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:text="@string/mission"
+        android:textColor="@color/white"
+        android:fontFamily="@font/opensans_regular"
+        android:textSize="25dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/qr_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"></LinearLayout>
+
+</LinearLayout>
+

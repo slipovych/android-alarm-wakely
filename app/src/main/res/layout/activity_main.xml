@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.main.MainActivity"
+    android:background="@color/grey">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:text="@string/alarm"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:fontFamily="@font/opensans_regular"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/button"
+        android:background="@drawable/button_add"
+        android:text="@string/button"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/opensans_light"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="40dp"/>
+
+
+
+</FrameLayout>
+

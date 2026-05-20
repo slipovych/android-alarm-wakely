@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Wakely</string>
+    <!-- Main Activity strings  -->
+    <string name="button">+</string>
+    <string name="alarm">Wakely</string>
+
+
+    <!-- Alarm Activity strings -->
+    <string name="alarm_stop">TURN OFF</string>
+
+    <!-- Add Alarm Activity strings -->
+    <string name="add_alarm">Add event</string>
+    <string name="checkmark">✓</string>
+    <string name="add_alarm_button">Select Time</string>
+    <string name="mission">Mission</string>
+    <string name="default_time">00 : 00</string>
+    <string name="set_mision">Set mission</string>
+
+
+    <!-- QR strings -->
+    <string name="set_qr">Set Qr-code</string>
+    <string name="name_qr">Name QR-code</string>
+    <string name="qr_codes">Qr codes</string>
+    <string name="add_qr">Add QR</string>
+
+
+</resources>

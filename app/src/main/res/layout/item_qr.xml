@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey"
+    android:orientation="horizontal">
+
+
+    <RadioButton
+        android:id="@+id/qr_picked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:fontFamily="@font/opensans_regular"
+        android:padding="20dp"
+        android:gravity="center_vertical"/>
+    <ImageButton
+        android:id="@+id/delete_qr"
+        android:layout_width="50dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_baseline_delete_24"
+        android:background="@color/grey"/>
+
+</LinearLayout>
